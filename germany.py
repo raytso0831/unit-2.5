@@ -1,6 +1,6 @@
 #Ray Tso
 #2/9/18
-#house.py
+#germany.py
 
 from ggame import *
 
@@ -21,3 +21,4 @@ Sprite(yellowRectangle,(225,400))
 
 
 App().run()
+
