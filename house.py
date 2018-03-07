@@ -4,17 +4,14 @@
 
 from ggame import *
 
-turoquise=Color(0x00FFFF,1) #this is the color turoquise
-purple=Color(0xCC00CC,1)
-orange=Color(0xFF8000,1)
+blue = Color(0x0000FF,1)
+black = Color(0x000000,1)
+blackoutline = LineStyle(1,black)
+bluesquare = RectangleAsset(200,200,blackoutline,blue)
+bluetriangle = PolygonAsset([(25,150),(175,50),(325,150)],blackoutline,blue)
+blackdoor = RectangleAsset(50,75,blackoutline,black)
 
-blackOutline=LineStyle(1, black)
-
-turoquiseRectangle=RectangleAsset(150,100,blackOutline,turoquise) #width, height, outline, fill
-orangeTriangle=PolygonAsset([(0,300),(120,180),(200,300)], blackOutline,orange)
-
-Sprite(turoquiseRectangle,(225,400))
-Sprite(orangeTriangle,(200,300))
-
+Sprite(bluesquare, (75,150))
+Sprite(bluetriangle,(30,50))
+Sprite(blackdoor, (150,275))
 App().run()
-
